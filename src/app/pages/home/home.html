@@ -1,0 +1,47 @@
+<div *ngIf="loading" class="flex justify-center items-center min-h-[400px]">
+  <div
+    class="w-12 h-12 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"
+  ></div>
+</div>
+
+<section *ngIf="!loading" class="p-6">
+  <div class="mb-8 relative">
+    <h2 class="text-2xl font-bold mb-4">Featured</h2>
+    <div class="relative flex justify-center items-center">
+      <button
+        (click)="prevSlide(); resetAutoSlide()"
+        class="absolute left-0 bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-3 rounded-l"
+      >
+        ◀
+      </button>
+      <img
+        [src]="sliderImages[currentSlide]"
+        class="h-40 w-full object-contain rounded shadow"
+        alt="Slider Image"
+      />
+      <button
+        (click)="nextSlide(); resetAutoSlide()"
+        class="absolute right-0 bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-3 rounded-r"
+      >
+        ▶
+      </button>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mb-4">Our Products</h2>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div
+      *ngFor="let product of products"
+      (click)="router.navigate(['/detail', product.id])"
+      class="bg-white p-4 shadow rounded hover:shadow-lg cursor-pointer"
+    >
+      <img
+        [src]="product.images[0]"
+        alt="Product"
+        class="w-full h-40 object-contain mb-2 rounded"
+      />
+      <p class="font-semibold">{{ product.title }}</p>
+      <p class="text-orange-500">${{ product.price }}</p>
+    </div>
+  </div>
+</section>

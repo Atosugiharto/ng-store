@@ -1,59 +1,47 @@
-# AngularUnictiveApp
+# 🛍️ NG Store - Angular v20 + Tailwind E-commerce Example
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+Ini adalah project website sederhana menggunakan **Angular v20 standalone**, terintegrasi dengan **TailwindCSS** & **dummy API**.  
+Project ini dibuat sebagai contoh e-commerce sederhana: terdapat halaman login, home dengan slider & daftar produk, serta halaman detail produk.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Fitur
+✅ Login terintegrasi dengan API  
+✅ Validasi form login  
+✅ Proteksi route: hanya user login yang bisa akses home & detail  
+✅ Halaman home berisi:
+- Slider dengan navigasi panah kiri/kanan & auto-slide
+- Daftar produk dari API  
+✅ Halaman detail produk  
+✅ Header & footer tampil di semua halaman (kecuali login)  
+✅ Loading spinner saat fetch data  
+✅ Pesan error saat login gagal
 
-```bash
+---
+
+## ⚙ Teknologi
+- Angular v20 (standalone)
+- TailwindCSS
+- RxJS
+- Dummy API:
+  - Auth: https://dummyjson.com/auth/login
+  - Products: https://dummyjson.com/products
+
+---
+
+## 🚀 Cara Install & Jalankan
+
+1️⃣ Clone repository:
+git clone https://github.com/atosugiharto/ng-store.git
+cd ng-store
+npm install
 ng serve
-```
+buka di http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔐 Informasi Login
+Gunakan akun dummy berikut untuk login:
 
-## Code scaffolding
+Username: emilys
+Password: emilyspass
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Data login ini hanya untuk testing ke dummyjson.com
