@@ -32,16 +32,16 @@ Project ini dibuat sebagai contoh e-commerce sederhana: terdapat halaman login, 
 ## 🚀 Cara Install & Jalankan
 
 1️⃣ Clone repository:
-git clone https://github.com/atosugiharto/ng-store.git
-cd ng-store
-npm install
-ng serve
-buka di http://localhost:4200
+- git clone https://github.com/atosugiharto/ng-store.git
+- cd ng-store
+- npm install
+- ng serve
+- buka di http://localhost:4200
 
 🔐 Informasi Login
 Gunakan akun dummy berikut untuk login:
 
-Username: emilys
-Password: emilyspass
+- Username: emilys
+- Password: emilyspass
 
 Data login ini hanya untuk testing ke dummyjson.com
